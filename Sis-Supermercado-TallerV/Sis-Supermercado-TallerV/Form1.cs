@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Sis_Supermercado_TallerV
@@ -52,17 +45,34 @@ namespace Sis_Supermercado_TallerV
         
         private void ptbSideBar_Click(object sender, EventArgs e)
         {
-            
-            while (menuIzq.Width == 270)
+          
+        }
+
+        private void ptbSideBar_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ptbSideBar_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            if(SidebarWrapper.Width == 202)
             {
-                menuIzq.Width = 58;
-                return;
+                SidebarWrapper.Width = 58;
             }
-            while(menuIzq.Width <= 270)
+            else
             {
-                menuIzq.Width = 270;
-                return;
+                SidebarWrapper.Width = 202;
             }
+
+           
+
+
+        }
+
+        private void ptbSideBar_Click_1(object sender, EventArgs e)
+        {
+ 
         }
     }
 }
