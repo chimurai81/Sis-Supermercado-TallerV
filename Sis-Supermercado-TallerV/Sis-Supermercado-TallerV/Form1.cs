@@ -52,5 +52,17 @@ namespace Sis_Supermercado_TallerV
         {
 
         }
+
+        private void ptbSideBar_Click(object sender, EventArgs e)
+        {
+            if(menuIzq.Width == 270)
+            {
+                menuIzq.Width = 58;
+            }
+            else
+            {
+                menuIzq.Width = 270;
+            }
+        }
     }
 }
