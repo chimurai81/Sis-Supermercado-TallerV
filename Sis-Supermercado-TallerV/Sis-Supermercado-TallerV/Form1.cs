@@ -15,6 +15,7 @@ namespace Sis_Supermercado_TallerV
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void menuSup_Paint(object sender, PaintEventArgs e)
@@ -48,20 +49,19 @@ namespace Sis_Supermercado_TallerV
             Application.Exit();
         }
 
-        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+        
         private void ptbSideBar_Click(object sender, EventArgs e)
         {
-            if(menuIzq.Width == 270)
+            
+            while (menuIzq.Width == 270)
             {
                 menuIzq.Width = 58;
+                return;
             }
-            else
+            while(menuIzq.Width <= 270)
             {
                 menuIzq.Width = 270;
+                return;
             }
         }
     }

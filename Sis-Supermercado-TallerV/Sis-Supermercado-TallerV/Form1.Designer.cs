@@ -56,6 +56,7 @@
             // menuCentro
             // 
             this.menuCentro.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.menuCentro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuCentro.Location = new System.Drawing.Point(0, 0);
             this.menuCentro.Name = "menuCentro";
             this.menuCentro.Size = new System.Drawing.Size(1400, 900);
@@ -72,6 +73,7 @@
             this.menuIzq.Controls.Add(this.bunifuFlatButton5);
             this.menuIzq.Controls.Add(this.btnVentas);
             this.menuIzq.Controls.Add(this.bunifuFlatButton1);
+            this.menuIzq.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuIzq.Location = new System.Drawing.Point(0, 0);
             this.menuIzq.Name = "menuIzq";
             this.menuIzq.Size = new System.Drawing.Size(270, 900);
@@ -174,7 +176,7 @@
             this.btnVentas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.btnVentas.OnHoverTextColor = System.Drawing.Color.White;
             this.btnVentas.selected = false;
-            this.btnVentas.Size = new System.Drawing.Size(227, 59);
+            this.btnVentas.Size = new System.Drawing.Size(270, 59);
             this.btnVentas.TabIndex = 0;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,7 +211,7 @@
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(227, 59);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(270, 59);
             this.bunifuFlatButton1.TabIndex = 1;
             this.bunifuFlatButton1.Text = "Caja";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -244,7 +246,7 @@
             this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton3.selected = false;
-            this.bunifuFlatButton3.Size = new System.Drawing.Size(227, 59);
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(270, 59);
             this.bunifuFlatButton3.TabIndex = 3;
             this.bunifuFlatButton3.Text = "  Cotizaciones";
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -279,7 +281,7 @@
             this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton5.selected = false;
-            this.bunifuFlatButton5.Size = new System.Drawing.Size(227, 59);
+            this.bunifuFlatButton5.Size = new System.Drawing.Size(270, 59);
             this.bunifuFlatButton5.TabIndex = 5;
             this.bunifuFlatButton5.Text = " Reportes";
             this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -314,7 +316,7 @@
             this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
-            this.bunifuFlatButton7.Size = new System.Drawing.Size(227, 59);
+            this.bunifuFlatButton7.Size = new System.Drawing.Size(270, 59);
             this.bunifuFlatButton7.TabIndex = 7;
             this.bunifuFlatButton7.Text = "Clientes";
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -349,7 +351,7 @@
             this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton8.selected = false;
-            this.bunifuFlatButton8.Size = new System.Drawing.Size(227, 59);
+            this.bunifuFlatButton8.Size = new System.Drawing.Size(270, 59);
             this.bunifuFlatButton8.TabIndex = 8;
             this.bunifuFlatButton8.Text = "     Devoluciones";
             this.bunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,7 +386,7 @@
             this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(63)))), ((int)(((byte)(105)))));
             this.bunifuFlatButton9.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton9.selected = false;
-            this.bunifuFlatButton9.Size = new System.Drawing.Size(227, 59);
+            this.bunifuFlatButton9.Size = new System.Drawing.Size(270, 59);
             this.bunifuFlatButton9.TabIndex = 9;
             this.bunifuFlatButton9.Text = "Productos";
             this.bunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
