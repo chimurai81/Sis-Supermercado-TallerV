@@ -58,11 +58,15 @@ namespace Sis_Supermercado_TallerV
 
             if(SidebarWrapper.Width == 202)
             {
+                SidebarWrapper.Visible = false;
                 SidebarWrapper.Width = 58;
+                bunifuTransition1.Show(SidebarWrapper);
             }
             else
             {
+                SidebarWrapper.Visible = false;
                 SidebarWrapper.Width = 202;
+                bunifuTransition2.Show(SidebarWrapper);
             }
 
            
