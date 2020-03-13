@@ -161,5 +161,26 @@
   <ItemGroup>
     <None Include="Resources\FondoLogin.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFOTEACHPERFILYOUTUBE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letrasLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letrasLogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLogin2ConLetras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagenLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoLogin3ConLetras.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

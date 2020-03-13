@@ -16,5 +16,16 @@ namespace Sis_Supermercado_TallerV
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
+            bunifuTransition1.Show(pictureBox1);
+        }
     }
 }

@@ -93,6 +93,26 @@ namespace Sis_Supermercado_TallerV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FondoLogin2ConLetras {
+            get {
+                object obj = ResourceManager.GetObject("FondoLogin2ConLetras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FondoLogin3ConLetras {
+            get {
+                object obj = ResourceManager.GetObject("FondoLogin3ConLetras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IcoCaja {
             get {
                 object obj = ResourceManager.GetObject("IcoCaja", resourceCulture);
@@ -186,6 +206,56 @@ namespace Sis_Supermercado_TallerV.Properties {
         internal static System.Drawing.Bitmap IcoVentas {
             get {
                 object obj = ResourceManager.GetObject("IcoVentas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImagenLogin {
+            get {
+                object obj = ResourceManager.GetObject("ImagenLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap INFOTEACHPERFILYOUTUBE {
+            get {
+                object obj = ResourceManager.GetObject("INFOTEACHPERFILYOUTUBE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letrasLogin {
+            get {
+                object obj = ResourceManager.GetObject("letrasLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letrasLogin1 {
+            get {
+                object obj = ResourceManager.GetObject("letrasLogin1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap market {
+            get {
+                object obj = ResourceManager.GetObject("market", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
