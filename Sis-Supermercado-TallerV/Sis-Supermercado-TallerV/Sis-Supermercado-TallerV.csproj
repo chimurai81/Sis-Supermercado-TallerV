@@ -139,5 +139,8 @@
   <ItemGroup>
     <None Include="Resources\paraelSliderIzquierdo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuoficial.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
