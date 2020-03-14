@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using MenuPrincipal;
 
 namespace Sis_Supermercado_TallerV
 {
@@ -16,7 +18,10 @@ namespace Sis_Supermercado_TallerV
         {
             InitializeComponent();
         }
-
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -28,18 +33,6 @@ namespace Sis_Supermercado_TallerV
             bunifuTransition1.Show(pictureBox1);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            label1.Visible = false;
-            bunifuCustomTextbox1.Visible = true;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            label2.Visible = false;
-            bunifuCustomTextbox2.Visible = true;
-            
-        }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -50,5 +43,66 @@ namespace Sis_Supermercado_TallerV
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (txtusuario.Text == "USUARIO")
+            {
+                txtusuario.Text = "";
+            }
+        }
+
+        private void txtusuario_Leave(object sender, EventArgs e)
+        {
+            if (txtusuario.Text == "")
+            {
+                txtusuario.Text = "USUARIO";
+            }
+        }
+
+        private void txtpass_Enter(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "CONTRASEÑA")
+            {
+                txtpass.Text = "";
+                txtpass.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void txtpass_Leave(object sender, EventArgs e)
+        {
+            if (txtpass.Text == "")
+            {
+                txtpass.Text = "CONTRASEÑA";
+                txtpass.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void FrmLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            FrmMenuPrincipal menu = new FrmMenuPrincipal();
+            menu.Show();
+            this.Hide();
+        }
+
     }
 }

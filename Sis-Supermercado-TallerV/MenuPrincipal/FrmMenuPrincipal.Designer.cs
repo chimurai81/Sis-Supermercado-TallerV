@@ -1,6 +1,6 @@
-﻿namespace Sis_Supermercado_TallerV
+﻿namespace MenuPrincipal
 {
-    partial class Form1
+    partial class FrmMenuPrincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,16 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation11 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            BunifuAnimatorNS.Animation animation12 = new BunifuAnimatorNS.Animation();
-            this.panel2 = new System.Windows.Forms.Panel();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenuPrincipal));
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.ptbRestore = new System.Windows.Forms.PictureBox();
-            this.ptbCerrar = new System.Windows.Forms.PictureBox();
-            this.ptbmaxi = new System.Windows.Forms.PictureBox();
-            this.PtbMinimizar = new System.Windows.Forms.PictureBox();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.ptbSideBar = new System.Windows.Forms.PictureBox();
@@ -49,132 +43,47 @@
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbRestore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbmaxi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PtbMinimizar)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ptbCerrar = new System.Windows.Forms.PictureBox();
+            this.PtbMinimizar = new System.Windows.Forms.PictureBox();
+            this.ptbRestore = new System.Windows.Forms.PictureBox();
+            this.ptbmaxi = new System.Windows.Forms.PictureBox();
+            this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.bunifuColorTransition1 = new Bunifu.Framework.UI.BunifuColorTransition(this.components);
             this.SidebarWrapper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSideBar)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRestore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbmaxi)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.ptbRestore);
-            this.panel2.Controls.Add(this.ptbCerrar);
-            this.panel2.Controls.Add(this.ptbmaxi);
-            this.panel2.Controls.Add(this.PtbMinimizar);
-            this.bunifuTransition2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(270, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1130, 900);
-            this.panel2.TabIndex = 7;
             // 
             // bunifuTransition1
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
-            animation11.AnimateOnlyDifferences = true;
-            animation11.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.BlindCoeff")));
-            animation11.LeafCoeff = 0F;
-            animation11.MaxTime = 1F;
-            animation11.MinTime = 0F;
-            animation11.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicCoeff")));
-            animation11.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation11.MosaicShift")));
-            animation11.MosaicSize = 0;
-            animation11.Padding = new System.Windows.Forms.Padding(0);
-            animation11.RotateCoeff = 0F;
-            animation11.RotateLimit = 0F;
-            animation11.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.ScaleCoeff")));
-            animation11.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation11.SlideCoeff")));
-            animation11.TimeCoeff = 0F;
-            animation11.TransparencyCoeff = 1F;
-            this.bunifuTransition1.DefaultAnimation = animation11;
-            // 
-            // bunifuTransition2
-            // 
-            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
-            this.bunifuTransition2.Cursor = null;
-            animation12.AnimateOnlyDifferences = true;
-            animation12.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.BlindCoeff")));
-            animation12.LeafCoeff = 1F;
-            animation12.MaxTime = 1F;
-            animation12.MinTime = 0F;
-            animation12.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicCoeff")));
-            animation12.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation12.MosaicShift")));
-            animation12.MosaicSize = 0;
-            animation12.Padding = new System.Windows.Forms.Padding(0);
-            animation12.RotateCoeff = 0F;
-            animation12.RotateLimit = 0F;
-            animation12.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.ScaleCoeff")));
-            animation12.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation12.SlideCoeff")));
-            animation12.TimeCoeff = 0F;
-            animation12.TransparencyCoeff = 0F;
-            this.bunifuTransition2.DefaultAnimation = animation12;
-            // 
-            // ptbRestore
-            // 
-            this.ptbRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuTransition1.SetDecoration(this.ptbRestore, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.ptbRestore, BunifuAnimatorNS.DecorationType.None);
-            this.ptbRestore.Image = global::Sis_Supermercado_TallerV.Properties.Resources.expand;
-            this.ptbRestore.Location = new System.Drawing.Point(1047, 12);
-            this.ptbRestore.Name = "ptbRestore";
-            this.ptbRestore.Size = new System.Drawing.Size(30, 30);
-            this.ptbRestore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbRestore.TabIndex = 4;
-            this.ptbRestore.TabStop = false;
-            this.ptbRestore.Visible = false;
-            this.ptbRestore.Click += new System.EventHandler(this.ptbMamizar_Click);
-            // 
-            // ptbCerrar
-            // 
-            this.ptbCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuTransition1.SetDecoration(this.ptbCerrar, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.ptbCerrar, BunifuAnimatorNS.DecorationType.None);
-            this.ptbCerrar.Image = global::Sis_Supermercado_TallerV.Properties.Resources.close;
-            this.ptbCerrar.Location = new System.Drawing.Point(1083, 12);
-            this.ptbCerrar.Name = "ptbCerrar";
-            this.ptbCerrar.Size = new System.Drawing.Size(30, 30);
-            this.ptbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbCerrar.TabIndex = 5;
-            this.ptbCerrar.TabStop = false;
-            this.ptbCerrar.Click += new System.EventHandler(this.ptbCerrar_Click);
-            // 
-            // ptbmaxi
-            // 
-            this.ptbmaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuTransition1.SetDecoration(this.ptbmaxi, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.ptbmaxi, BunifuAnimatorNS.DecorationType.None);
-            this.ptbmaxi.Image = global::Sis_Supermercado_TallerV.Properties.Resources.minimize__1_;
-            this.ptbmaxi.Location = new System.Drawing.Point(1047, 12);
-            this.ptbmaxi.Name = "ptbmaxi";
-            this.ptbmaxi.Size = new System.Drawing.Size(30, 30);
-            this.ptbmaxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbmaxi.TabIndex = 1;
-            this.ptbmaxi.TabStop = false;
-            this.ptbmaxi.Click += new System.EventHandler(this.ptbRestaurar_Click);
-            // 
-            // PtbMinimizar
-            // 
-            this.PtbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuTransition1.SetDecoration(this.PtbMinimizar, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.PtbMinimizar, BunifuAnimatorNS.DecorationType.None);
-            this.PtbMinimizar.Image = global::Sis_Supermercado_TallerV.Properties.Resources.minimize;
-            this.PtbMinimizar.Location = new System.Drawing.Point(1011, 12);
-            this.PtbMinimizar.Name = "PtbMinimizar";
-            this.PtbMinimizar.Size = new System.Drawing.Size(30, 30);
-            this.PtbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PtbMinimizar.TabIndex = 3;
-            this.PtbMinimizar.TabStop = false;
-            this.PtbMinimizar.Click += new System.EventHandler(this.PtbMinimizar_Click);
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // SidebarWrapper
             // 
             this.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(131)))), ((int)(((byte)(189)))));
-            this.SidebarWrapper.BackgroundImage = global::Sis_Supermercado_TallerV.Properties.Resources.paraelSliderIzquierdo;
+            this.SidebarWrapper.BackgroundImage = global::MenuPrincipal.Properties.Resources.paraelSliderIzquierdo;
             this.SidebarWrapper.Controls.Add(this.bunifuSeparator1);
             this.SidebarWrapper.Controls.Add(this.ptbSideBar);
             this.SidebarWrapper.Controls.Add(this.bunifuFlatButton9);
@@ -190,7 +99,8 @@
             this.SidebarWrapper.Location = new System.Drawing.Point(0, 0);
             this.SidebarWrapper.Name = "SidebarWrapper";
             this.SidebarWrapper.Size = new System.Drawing.Size(270, 900);
-            this.SidebarWrapper.TabIndex = 6;
+            this.SidebarWrapper.TabIndex = 7;
+            this.SidebarWrapper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SidebarWrapper_MouseDown);
             // 
             // bunifuSeparator1
             // 
@@ -211,14 +121,13 @@
             // 
             this.bunifuTransition1.SetDecoration(this.ptbSideBar, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this.ptbSideBar, BunifuAnimatorNS.DecorationType.None);
-            this.ptbSideBar.Image = global::Sis_Supermercado_TallerV.Properties.Resources.menuoficial2;
+            this.ptbSideBar.Image = global::MenuPrincipal.Properties.Resources.menuoficial2;
             this.ptbSideBar.Location = new System.Drawing.Point(12, 50);
             this.ptbSideBar.Name = "ptbSideBar";
             this.ptbSideBar.Size = new System.Drawing.Size(35, 35);
             this.ptbSideBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbSideBar.TabIndex = 10;
             this.ptbSideBar.TabStop = false;
-            this.ptbSideBar.Click += new System.EventHandler(this.ptbSideBar_Click_1);
             this.ptbSideBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ptbSideBar_MouseDown);
             // 
             // bunifuFlatButton9
@@ -234,7 +143,7 @@
             this.bunifuFlatButton9.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton9.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton9.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton9.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.IcoPoductos;
+            this.bunifuFlatButton9.Iconimage = global::MenuPrincipal.Properties.Resources.IcoPoductos;
             this.bunifuFlatButton9.Iconimage_right = null;
             this.bunifuFlatButton9.Iconimage_right_Selected = null;
             this.bunifuFlatButton9.Iconimage_Selected = null;
@@ -272,7 +181,7 @@
             this.btnVentas.DisabledColor = System.Drawing.Color.Gray;
             this.btnVentas.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentas.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnVentas.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.IcoVentas;
+            this.btnVentas.Iconimage = global::MenuPrincipal.Properties.Resources.IcoVentas;
             this.btnVentas.Iconimage_right = null;
             this.btnVentas.Iconimage_right_Selected = null;
             this.btnVentas.Iconimage_Selected = null;
@@ -310,7 +219,7 @@
             this.bunifuFlatButton8.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton8.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton8.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton8.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.IcoDevolucion;
+            this.bunifuFlatButton8.Iconimage = global::MenuPrincipal.Properties.Resources.IcoDevolucion;
             this.bunifuFlatButton8.Iconimage_right = null;
             this.bunifuFlatButton8.Iconimage_right_Selected = null;
             this.bunifuFlatButton8.Iconimage_Selected = null;
@@ -348,7 +257,7 @@
             this.bunifuFlatButton7.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton7.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton7.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton7.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.IcoClientes;
+            this.bunifuFlatButton7.Iconimage = global::MenuPrincipal.Properties.Resources.IcoClientes;
             this.bunifuFlatButton7.Iconimage_right = null;
             this.bunifuFlatButton7.Iconimage_right_Selected = null;
             this.bunifuFlatButton7.Iconimage_Selected = null;
@@ -386,7 +295,7 @@
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.IcoCaja;
+            this.bunifuFlatButton1.Iconimage = global::MenuPrincipal.Properties.Resources.IcoCaja;
             this.bunifuFlatButton1.Iconimage_right = null;
             this.bunifuFlatButton1.Iconimage_right_Selected = null;
             this.bunifuFlatButton1.Iconimage_Selected = null;
@@ -424,7 +333,7 @@
             this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton5.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton5.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.Icoreportes;
+            this.bunifuFlatButton5.Iconimage = global::MenuPrincipal.Properties.Resources.Icoreportes;
             this.bunifuFlatButton5.Iconimage_right = null;
             this.bunifuFlatButton5.Iconimage_right_Selected = null;
             this.bunifuFlatButton5.Iconimage_Selected = null;
@@ -462,7 +371,7 @@
             this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuFlatButton3.Font = new System.Drawing.Font("Bitstream Vera Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton3.Iconimage = global::Sis_Supermercado_TallerV.Properties.Resources.IcoCotizaciones;
+            this.bunifuFlatButton3.Iconimage = global::MenuPrincipal.Properties.Resources.IcoCotizaciones;
             this.bunifuFlatButton3.Iconimage_right = null;
             this.bunifuFlatButton3.Iconimage_right_Selected = null;
             this.bunifuFlatButton3.Iconimage_Selected = null;
@@ -487,7 +396,106 @@
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // Form1
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.ptbCerrar);
+            this.panel2.Controls.Add(this.PtbMinimizar);
+            this.panel2.Controls.Add(this.ptbRestore);
+            this.panel2.Controls.Add(this.ptbmaxi);
+            this.bunifuTransition2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(270, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1130, 900);
+            this.panel2.TabIndex = 8;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // ptbCerrar
+            // 
+            this.ptbCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuTransition1.SetDecoration(this.ptbCerrar, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.ptbCerrar, BunifuAnimatorNS.DecorationType.None);
+            this.ptbCerrar.Image = global::MenuPrincipal.Properties.Resources.close;
+            this.ptbCerrar.Location = new System.Drawing.Point(1083, 12);
+            this.ptbCerrar.Name = "ptbCerrar";
+            this.ptbCerrar.Size = new System.Drawing.Size(30, 30);
+            this.ptbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbCerrar.TabIndex = 5;
+            this.ptbCerrar.TabStop = false;
+            this.ptbCerrar.Click += new System.EventHandler(this.ptbCerrar_Click);
+            // 
+            // PtbMinimizar
+            // 
+            this.PtbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuTransition1.SetDecoration(this.PtbMinimizar, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.PtbMinimizar, BunifuAnimatorNS.DecorationType.None);
+            this.PtbMinimizar.Image = global::MenuPrincipal.Properties.Resources.minimize;
+            this.PtbMinimizar.Location = new System.Drawing.Point(1011, 12);
+            this.PtbMinimizar.Name = "PtbMinimizar";
+            this.PtbMinimizar.Size = new System.Drawing.Size(30, 30);
+            this.PtbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PtbMinimizar.TabIndex = 3;
+            this.PtbMinimizar.TabStop = false;
+            this.PtbMinimizar.Click += new System.EventHandler(this.PtbMinimizar_Click);
+            // 
+            // ptbRestore
+            // 
+            this.ptbRestore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuTransition1.SetDecoration(this.ptbRestore, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.ptbRestore, BunifuAnimatorNS.DecorationType.None);
+            this.ptbRestore.Image = global::MenuPrincipal.Properties.Resources.expand;
+            this.ptbRestore.Location = new System.Drawing.Point(1047, 12);
+            this.ptbRestore.Name = "ptbRestore";
+            this.ptbRestore.Size = new System.Drawing.Size(30, 30);
+            this.ptbRestore.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbRestore.TabIndex = 4;
+            this.ptbRestore.TabStop = false;
+            this.ptbRestore.Visible = false;
+            this.ptbRestore.Click += new System.EventHandler(this.ptbRestore_Click);
+            // 
+            // ptbmaxi
+            // 
+            this.ptbmaxi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bunifuTransition1.SetDecoration(this.ptbmaxi, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.ptbmaxi, BunifuAnimatorNS.DecorationType.None);
+            this.ptbmaxi.Image = global::MenuPrincipal.Properties.Resources.minimize__1_;
+            this.ptbmaxi.Location = new System.Drawing.Point(1047, 12);
+            this.ptbmaxi.Name = "ptbmaxi";
+            this.ptbmaxi.Size = new System.Drawing.Size(30, 30);
+            this.ptbmaxi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbmaxi.TabIndex = 1;
+            this.ptbmaxi.TabStop = false;
+            this.ptbmaxi.Click += new System.EventHandler(this.ptbmaxi_Click);
+            // 
+            // bunifuTransition2
+            // 
+            this.bunifuTransition2.AnimationType = BunifuAnimatorNS.AnimationType.Leaf;
+            this.bunifuTransition2.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 1F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation2;
+            // 
+            // bunifuColorTransition1
+            // 
+            this.bunifuColorTransition1.Color1 = System.Drawing.Color.White;
+            this.bunifuColorTransition1.Color2 = System.Drawing.Color.White;
+            this.bunifuColorTransition1.ProgessValue = 0;
+            // 
+            // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -497,26 +505,30 @@
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.bunifuTransition2.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbRestore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbmaxi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PtbMinimizar)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.SidebarWrapper.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbSideBar)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbRestore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbmaxi)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox ptbRestore;
-        private System.Windows.Forms.PictureBox ptbmaxi;
-        private System.Windows.Forms.PictureBox PtbMinimizar;
-        private System.Windows.Forms.PictureBox ptbCerrar;
+
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
+        private BunifuAnimatorNS.BunifuTransition bunifuTransition2;
+        private Bunifu.Framework.UI.BunifuColorTransition bunifuColorTransition1;
         private System.Windows.Forms.Panel SidebarWrapper;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private System.Windows.Forms.PictureBox ptbSideBar;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton9;
         private Bunifu.Framework.UI.BunifuFlatButton btnVentas;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton8;
@@ -525,10 +537,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox ptbSideBar;
-        private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
-        private BunifuAnimatorNS.BunifuTransition bunifuTransition2;
-        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private System.Windows.Forms.PictureBox ptbRestore;
+        private System.Windows.Forms.PictureBox ptbCerrar;
+        private System.Windows.Forms.PictureBox ptbmaxi;
+        private System.Windows.Forms.PictureBox PtbMinimizar;
     }
 }
 
