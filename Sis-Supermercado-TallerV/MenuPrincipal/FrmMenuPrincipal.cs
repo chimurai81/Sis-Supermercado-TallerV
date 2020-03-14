@@ -16,6 +16,7 @@ namespace MenuPrincipal
         public FrmMenuPrincipal()
         {
             InitializeComponent();
+            
         }
 
         // inicio
@@ -82,7 +83,13 @@ namespace MenuPrincipal
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            
+
+
+        }
+
+        private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
