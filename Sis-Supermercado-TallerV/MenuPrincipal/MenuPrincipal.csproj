@@ -56,10 +56,19 @@
     <Compile Include="FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMenuPrincipal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal2.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuPrincipal2.resx">
+      <DependentUpon>FrmMenuPrincipal2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -164,6 +173,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\paraelSliderIzquierdo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarColorGris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginminimalista2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizarColorGris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usersGris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\passcolorgris.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

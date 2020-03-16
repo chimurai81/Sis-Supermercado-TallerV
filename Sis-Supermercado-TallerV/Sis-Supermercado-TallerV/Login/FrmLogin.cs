@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MenuPrincipal;
+using Sis_Supermercado_TallerV.RegistroUsers;
 
 namespace Sis_Supermercado_TallerV
 {
@@ -104,5 +105,11 @@ namespace Sis_Supermercado_TallerV
             this.Hide();
         }
 
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            FrmRegistroUsuarios menu = new FrmRegistroUsuarios();
+            menu.Show();
+            this.Hide();
+        }
     }
 }
