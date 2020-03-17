@@ -100,7 +100,7 @@ namespace Sis_Supermercado_TallerV
         
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal menu = new FrmMenuPrincipal();
+            FrmMenuPrincipal2 menu = new FrmMenuPrincipal2();
             menu.Show();
             this.Hide();
         }

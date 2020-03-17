@@ -189,5 +189,11 @@
   <ItemGroup>
     <None Include="Resources\passcolorgris.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Usuarios\Usuarios.csproj">
+      <Project>{5AF63239-BE7B-4318-9311-8E5D93936004}</Project>
+      <Name>Usuarios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

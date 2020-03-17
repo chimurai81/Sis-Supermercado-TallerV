@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Usuarios.Formularios;
 
 namespace MenuPrincipal
 {
@@ -90,6 +91,30 @@ namespace MenuPrincipal
         private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = PanelContenedor.Controls.OfType<MiForm>().FirstOrDefault();
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                PanelContenedor.Controls.Add(formulario);
+                PanelContenedor.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmUsuarios>();
         }
     }
 }
