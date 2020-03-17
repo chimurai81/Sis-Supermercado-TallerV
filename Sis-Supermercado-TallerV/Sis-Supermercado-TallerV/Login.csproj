@@ -79,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login\Encriptar.cs" />
     <Compile Include="Login\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

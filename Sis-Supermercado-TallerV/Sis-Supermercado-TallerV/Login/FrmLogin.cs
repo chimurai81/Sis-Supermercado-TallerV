@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 using MenuPrincipal;
 using Sis_Supermercado_TallerV.RegistroUsers;
 using MySql.Data.MySqlClient;
+using Sis_Supermercado_TallerV.Login;
 
 namespace Sis_Supermercado_TallerV
 {
@@ -101,8 +102,10 @@ namespace Sis_Supermercado_TallerV
         public void InicioDeSesion_db_usuarios(string condicion)
         {
             string sql;
+            string passEncrip;
+            passEncrip = Encriptar.EncryptData(txtusuario.Text, txtpass.Text);
             //MySqlCommand comando;
-            sql = "select * from db_usuarios where usuario = '"+txtusuario.Text+"' and password = '"+ txtpass.Text+"'" + condicion;
+            sql = "select * from db_usuarios where usuario = '"+txtusuario.Text+"' and password = '"+ passEncrip+"'" + condicion;
             MySqlCommand comando;
             try
             {
