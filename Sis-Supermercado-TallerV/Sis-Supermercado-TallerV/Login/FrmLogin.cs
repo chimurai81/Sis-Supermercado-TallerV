@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MenuPrincipal;
 using Sis_Supermercado_TallerV.RegistroUsers;
+using MySql.Data.MySqlClient;
 
 namespace Sis_Supermercado_TallerV
 {
@@ -97,12 +98,40 @@ namespace Sis_Supermercado_TallerV
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        
+        public void InicioDeSesion_db_usuarios(string condicion)
+        {
+            string sql;
+            //MySqlCommand comando;
+            sql = "select * from db_usuarios where usuario = '"+txtusuario.Text+"' and password = '"+ txtpass.Text+"'" + condicion;
+            MySqlCommand comando;
+            try
+            {
+                modulo.AbrirConexion();
+                comando = new MySqlCommand(sql, modulo.conexion);
+             
+                MySqlDataReader leer = comando.ExecuteReader();
+
+                if (leer.Read())
+                {
+                    FrmMenuPrincipal2 menu = new FrmMenuPrincipal2();
+                    menu.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            FrmMenuPrincipal2 menu = new FrmMenuPrincipal2();
-            menu.Show();
-            this.Hide();
+            InicioDeSesion_db_usuarios("");
+
         }
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)

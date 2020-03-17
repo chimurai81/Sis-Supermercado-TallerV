@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,11 +33,39 @@ namespace Sis_Supermercado_TallerV.RegistroUsers
             FrmLogin login = new FrmLogin();
             login.Show();
         }
+        public void GetAll(string condicion)
+        {
+            string sql;
+            MySqlDataAdapter consulta;
+            DataSet resultado;
+            sql = "select * from db_usuarios " + condicion;
 
+            try
+            {
+                modulo.AbrirConexion();
+                consulta = new MySqlDataAdapter(sql, modulo.conexion);
+                resultado = new DataSet();
+                consulta.Fill(resultado, "rsresultado");
+                dataGridView1.DataSource = resultado.Tables["rsresultado"];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void FrmRegistroUsuarios_Load(object sender, EventArgs e)
         {
             pictureBox1.Visible = false;
             bunifuTransition1.Show(pictureBox1);
+            GetAll("");
+        }
+
+        
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
