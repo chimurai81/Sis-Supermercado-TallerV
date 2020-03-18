@@ -116,7 +116,7 @@ namespace Sis_Supermercado_TallerV
 
                 if (leer.Read())
                 {
-                    FrmMenuPrincipal2 menu = new FrmMenuPrincipal2();
+                    FrmMenuPrincipal menu = new FrmMenuPrincipal();
                     menu.Show();
                     this.Hide();
                 }

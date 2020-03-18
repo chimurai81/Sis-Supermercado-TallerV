@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuPrincipal", "MenuPrinci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Usuarios", "Usuarios\Usuarios.csproj", "{5AF63239-BE7B-4318-9311-8E5D93936004}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEncriptar", "CapaEncriptar\CapaEncriptar.csproj", "{A8BD7F4F-F89D-4C15-8F13-A616E69C579B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MensajesPersonalizados", "MensajesPersonalizados\MensajesPersonalizados.csproj", "{69D3F89C-9228-41EA-A159-92729348265E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{5AF63239-BE7B-4318-9311-8E5D93936004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF63239-BE7B-4318-9311-8E5D93936004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF63239-BE7B-4318-9311-8E5D93936004}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A8BD7F4F-F89D-4C15-8F13-A616E69C579B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8BD7F4F-F89D-4C15-8F13-A616E69C579B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8BD7F4F-F89D-4C15-8F13-A616E69C579B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8BD7F4F-F89D-4C15-8F13-A616E69C579B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D3F89C-9228-41EA-A159-92729348265E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D3F89C-9228-41EA-A159-92729348265E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D3F89C-9228-41EA-A159-92729348265E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D3F89C-9228-41EA-A159-92729348265E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

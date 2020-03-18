@@ -116,5 +116,10 @@ namespace MenuPrincipal
         {
             AbrirFormulario<FrmUsuarios>();
         }
+
+        private void ptbSideBar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
