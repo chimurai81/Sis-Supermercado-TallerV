@@ -115,6 +115,7 @@ namespace MenuPrincipal
         private void btnVentas_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmUsuarios>();
+            //
         }
 
         private void ptbSideBar_Click(object sender, EventArgs e)
