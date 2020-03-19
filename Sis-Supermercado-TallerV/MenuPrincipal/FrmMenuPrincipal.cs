@@ -45,7 +45,23 @@ namespace MenuPrincipal
             }
         }
 
+        private void ptbCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void ptbmaxi_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            ptbmaxi.Visible = false;
+            ptbRestore.Visible = true;
+
+        }
+
+        private void PtbMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
 
         private void ptbRestore_Click(object sender, EventArgs e)
         {
@@ -54,7 +70,11 @@ namespace MenuPrincipal
             ptbmaxi.Visible = true;
         }
 
-
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
 
         private void SidebarWrapper_MouseDown(object sender, MouseEventArgs e)
         {
@@ -64,7 +84,8 @@ namespace MenuPrincipal
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            bunifuFormFadeTransition1.ShowAsyc(this);
+
+
         }
 
         private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
@@ -93,45 +114,12 @@ namespace MenuPrincipal
         }
         private void btnVentas_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormulario<FrmUsuarios>();
         }
 
         private void ptbSideBar_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void PtbMinimizar_Click_1(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void ptbmaxi_Click_1(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Maximized;
-            ptbmaxi.Visible = false;
-            ptbRestore.Visible = true;
-        }
-
-        private void ptbRestore_Click_2(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Normal;
-        }
-
-        private void ptbClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void PanelContenedor_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void bunifuFlatButton2_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<FrmUsuarios>();
         }
     }
 }

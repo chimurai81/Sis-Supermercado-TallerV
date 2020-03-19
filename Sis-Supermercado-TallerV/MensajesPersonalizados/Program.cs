@@ -16,7 +16,7 @@ namespace MensajesPersonalizados
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MensajeDeError());
+            Application.Run(new MensajeDeCheck());
         }
     }
 }

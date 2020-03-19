@@ -19,7 +19,7 @@ namespace MensajesPersonalizados
 
         private void MensajeDeCheck_Load(object sender, EventArgs e)
         {
-            //transicionForm.ShowAsyc(this);
+            transicionForm.ShowAsyc(this);
             pictureBox1.Visible = false;
 
             button1.Visible = false;

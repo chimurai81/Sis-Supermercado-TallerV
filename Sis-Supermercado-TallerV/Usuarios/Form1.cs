@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MensajesPersonalizados
+namespace Usuarios
 {
-    public partial class MensajeDeError : Form
+    public partial class Form1 : Form
     {
-        public MensajeDeError()
+        public Form1()
         {
             InitializeComponent();
         }
