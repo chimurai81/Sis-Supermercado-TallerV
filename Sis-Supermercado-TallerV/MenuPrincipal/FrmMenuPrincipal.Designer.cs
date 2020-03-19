@@ -567,6 +567,7 @@
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.SidebarWrapper.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptbSideBar)).EndInit();
