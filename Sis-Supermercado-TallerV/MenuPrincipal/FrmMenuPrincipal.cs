@@ -61,6 +61,7 @@ namespace MenuPrincipal
         private void PtbMinimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+            //akak
         }
 
         private void ptbRestore_Click(object sender, EventArgs e)
