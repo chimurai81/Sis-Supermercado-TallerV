@@ -37,7 +37,7 @@
       <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.52">
-      <HintPath>..\Sis-Supermercado-TallerV\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+      <HintPath>..\Sis-Supermercado-TallerV\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
@@ -216,9 +216,6 @@
       <Project>{5AF63239-BE7B-4318-9311-8E5D93936004}</Project>
       <Name>Usuarios</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
