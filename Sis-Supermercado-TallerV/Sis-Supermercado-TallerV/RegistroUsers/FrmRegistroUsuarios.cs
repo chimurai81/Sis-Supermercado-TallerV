@@ -36,8 +36,7 @@ namespace Sis_Supermercado_TallerV.RegistroUsers
        
         private void FrmRegistroUsuarios_Load(object sender, EventArgs e)
         {
-            pictureBox1.Visible = false;
-            bunifuTransition1.Show(pictureBox1);
+            
         }
 
         

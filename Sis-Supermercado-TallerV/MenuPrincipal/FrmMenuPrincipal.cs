@@ -90,7 +90,7 @@ namespace MenuPrincipal
 
         private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
         {
-
+            //
         }
         private void AbrirFormulario<MiForm>() where MiForm : Form, new()
         {
