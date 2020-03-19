@@ -12,6 +12,7 @@ using MenuPrincipal;
 using Sis_Supermercado_TallerV.RegistroUsers;
 using MySql.Data.MySqlClient;
 using Sis_Supermercado_TallerV.Login;
+using MensajesPersonalizados;
 
 namespace Sis_Supermercado_TallerV
 {
@@ -122,7 +123,8 @@ namespace Sis_Supermercado_TallerV
                 }
                 else
                 {
-                    MessageBox.Show("Error");
+                    MensajeDeError show = new MensajeDeError();
+                    show.ShowDialog();
                 }
 
             }

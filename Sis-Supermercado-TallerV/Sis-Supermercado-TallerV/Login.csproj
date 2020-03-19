@@ -216,6 +216,10 @@
     <None Include="Resources\password.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MensajesPersonalizados\MensajesPersonalizados.csproj">
+      <Project>{69d3f89c-9228-41ea-a159-92729348265e}</Project>
+      <Name>MensajesPersonalizados</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MenuPrincipal\MenuPrincipal.csproj">
       <Project>{e67584bb-6695-41ba-b4d5-4c598b6a320a}</Project>
       <Name>MenuPrincipal</Name>
