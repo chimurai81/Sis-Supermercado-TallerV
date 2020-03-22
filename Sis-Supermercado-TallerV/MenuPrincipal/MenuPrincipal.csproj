@@ -71,6 +71,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmCodigodeBarra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCodigodeBarra.Designer.cs">
+      <DependentUpon>FrmCodigodeBarra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCodigodeBarra.resx">
+      <DependentUpon>FrmCodigodeBarra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
